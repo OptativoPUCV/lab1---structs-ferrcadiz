@@ -81,3 +81,23 @@ Thu 17 Aug 2023 09:02:28 PM UTC:
  tests:  0|4
 total_score: 30/70
 f32721e
+Thu 17 Aug 2023 09:06:52 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:101:3: error: expected expression before ‘}’ token
+  101 |   }
+      |   ^
+exercises.c:97:7: error: unused variable ‘ordenDescendente’ [-Werror=unused-variable]
+   97 |   int ordenDescendente = 1;
+      |       ^~~~~~~~~~~~~~~~
+exercises.c:96:7: error: unused variable ‘ordenAscendente’ [-Werror=unused-variable]
+   96 |   int ordenAscendente = 1;
+      |       ^~~~~~~~~~~~~~~
+exercises.c:104:1: error: control reaches end of non-void function [-Werror=return-type]
+  104 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e38d587
