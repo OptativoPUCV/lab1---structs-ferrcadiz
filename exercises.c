@@ -55,7 +55,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     if (arr[i] % 2 == 0) cont++;
   }
   
-  int *arrPares = (int *)malloc(cont * sizeof(int));
+  int *arrPares = (int *)malloc(sizeof(int));
   for(int i = 0; i < size ; i++){
     if (arrPares == NULL) {
       *newSize = 0;
@@ -173,9 +173,6 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   libro -> autor.anioNacimiento = anioNacimiento;
 
   libro -> anioPublicacion = anioPublicacion;
-  
-  
-  
   
 }
 
