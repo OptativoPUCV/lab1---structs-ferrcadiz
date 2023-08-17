@@ -326,3 +326,37 @@ Thu 17 Aug 2023 11:27:47 PM UTC:
  tests:  0|2
 total_score: 50/70
 3865bbd
+Thu 17 Aug 2023 11:33:23 PM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:170:10: error: expected expression before ‘Libro’
+  170 |   strcpy(Libro -> titulo, titulo);
+      |          ^~~~~
+exercises.c:170:3: error: too few arguments to function ‘strcpy’
+  170 |   strcpy(Libro -> titulo, titulo);
+      |   ^~~~~~
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/features.h:490,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/ctype.h:25,
+                 from exercises.c:1,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:1:
+exercises.c:171:10: error: expected expression before ‘Libro’
+  171 |   strcpy(Libro -> autor.nombre, nombre);
+      |          ^~~~~
+exercises.c:171:3: error: too few arguments to function ‘strcpy’
+  171 |   strcpy(Libro -> autor.nombre, nombre);
+      |   ^~~~~~
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/features.h:490,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/ctype.h:25,
+                 from exercises.c:1,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+Compilation failed
+a2f1d72
