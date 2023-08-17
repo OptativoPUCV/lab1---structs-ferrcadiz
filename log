@@ -360,3 +360,14 @@ In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163
       | ^~~~~
 Compilation failed
 a2f1d72
+Thu 17 Aug 2023 11:33:54 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:171:33: error: ‘nombre’ undeclared (first use in this function)
+  171 |   strcpy(libro -> autor.nombre, nombre);
+      |                                 ^~~~~~
+exercises.c:171:33: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7a50fbb
