@@ -274,3 +274,17 @@ exercises.c:95:8: error: ‘i’ may be used uninitialized in this function [-We
 cc1: all warnings being treated as errors
 Compilation failed
 b24793a
+Thu 17 Aug 2023 11:11:40 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:109:7: error: variable ‘ordenDescendente’ set but not used [-Werror=unused-but-set-variable]
+  109 |   int ordenDescendente = 1;
+      |       ^~~~~~~~~~~~~~~~
+exercises.c:120:1: error: control reaches end of non-void function [-Werror=return-type]
+  120 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+63ba457
