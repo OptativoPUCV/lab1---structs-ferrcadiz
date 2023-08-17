@@ -101,3 +101,40 @@ exercises.c:104:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 e38d587
+Thu 17 Aug 2023 11:02:36 PM UTC: 
+ exercises.c | 19 ++++++++++++++++---
+ 1 file changed, 16 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:90:9: error: expected expression before ‘int’
+   90 |   while(int i < size1 && int j < size2){
+      |         ^~~
+exercises.c:92:13: error: ‘i’ undeclared (first use in this function)
+   92 |     if(arr1[i] < arr2[j]){
+      |             ^
+exercises.c:92:13: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:92:23: error: ‘j’ undeclared (first use in this function)
+   92 |     if(arr1[i] < arr2[j]){
+      |                       ^
+exercises.c:94:10: error: expected ‘;’ before ‘}’ token
+   94 |       i++
+      |          ^
+      |          ;
+   95 |     }
+      |     ~     
+exercises.c: In function ‘checkSorted’:
+exercises.c:112:3: error: expected expression before ‘}’ token
+  112 |   }
+      |   ^
+exercises.c:108:7: error: unused variable ‘ordenDescendente’ [-Werror=unused-variable]
+  108 |   int ordenDescendente = 1;
+      |       ^~~~~~~~~~~~~~~~
+exercises.c:107:7: error: unused variable ‘ordenAscendente’ [-Werror=unused-variable]
+  107 |   int ordenAscendente = 1;
+      |       ^~~~~~~~~~~~~~~
+exercises.c:115:1: error: control reaches end of non-void function [-Werror=return-type]
+  115 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6142ca9
