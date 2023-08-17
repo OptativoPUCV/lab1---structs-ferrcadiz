@@ -433,3 +433,14 @@ exercises.c:173:9: error: ‘Libro’ has no member named ‘anioNacimiento’
       |         ^~
 Compilation failed
 c22c415
+Thu 17 Aug 2023 11:38:31 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:173:12: error: ‘Libro’ has no member named ‘Autor’; did you mean ‘autor’?
+  173 |   libro -> Autor.anioNacimiento = anioNacimiento;
+      |            ^~~~~
+      |            autor
+Compilation failed
+8c03f41
