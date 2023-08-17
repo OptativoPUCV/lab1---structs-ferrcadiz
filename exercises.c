@@ -126,7 +126,7 @@ int checkSorted(int arr[], int size) {
   int ordenAscendente = 1; 
   int ordenDescendente = 1; 
 
-  for(int i = 0 ; i < size ; i++){
+  for(int i = 1 ; i < size ; i++){
     if(arr[i] < arr[i - 1]) ordenAscendente = 0;
     
     if(arr[i] > arr[i - 1]) ordenDescendente = 0; 
