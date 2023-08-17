@@ -3,3 +3,9 @@ Thu 17 Aug 2023 08:05:30 PM UTC:
  tests:  0|7
 total_score: 0/70
 bb6025e
+Thu 17 Aug 2023 08:18:42 PM UTC: 
+ exercises.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+ tests:  0|7
+total_score: 0/70
+31bb3c1
