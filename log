@@ -308,3 +308,9 @@ Thu 17 Aug 2023 11:18:38 PM UTC:
  tests:  0|4
 total_score: 30/70
 def72d7
+Thu 17 Aug 2023 11:23:40 PM UTC: 
+ exercises.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ tests:  0|3
+total_score: 40/70
+9256e78

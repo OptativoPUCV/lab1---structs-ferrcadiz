@@ -18,7 +18,6 @@ int findMax(int arr[], int size) {
     if(arr[i] > mayor) mayor = arr[i]; 
     
   }
-
   return mayor; 
 }
 
@@ -88,6 +87,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
   int k = 0;
   int i = 0;
   int j = 0;
+  
   while(i < size1 && j < size2){
 
     if(arr1[i] < arr2[j]){
@@ -100,6 +100,19 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
     }
     k++;    
  }   
+
+  while(i < size1)
+  {
+    result[k] = arr1[i];
+    i++;
+    k++;
+  }
+  while(j < size1)
+  {
+    result[k] = arr2[j];
+    j++;
+    k++;
+  }
 }
 
 /*
