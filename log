@@ -407,3 +407,13 @@ exercises.c:173:9: error: expected identifier or ‘(’ before ‘->’ token
       |         ^~
 Compilation failed
 629a58e
+Thu 17 Aug 2023 11:36:25 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:173:9: error: expected identifier or ‘(’ before ‘->’ token
+  173 |   Libro -> anioPublicacion = anioPublicacion;
+      |         ^~
+Compilation failed
+0cb1342
