@@ -107,6 +107,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
     i++;
     k++;
   }
+  
   while(j < size1)
   {
     result[k] = arr2[j];
@@ -128,7 +129,7 @@ int checkSorted(int arr[], int size) {
   for(int i = 0 ; i < size ; i++){
     if(arr[i] < arr[i - 1]) ordenAscendente = 0;
     
-    if(arr[i] > arr[1 - 1]) ordenDescendente = 0; 
+    if(arr[i] > arr[i - 1]) ordenDescendente = 0; 
   
   }
   
