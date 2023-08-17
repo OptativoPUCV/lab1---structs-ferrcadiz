@@ -31,3 +31,15 @@ Thu 17 Aug 2023 08:30:46 PM UTC:
  tests:  0|5
 total_score: 20/70
 b0011af
+Thu 17 Aug 2023 08:35:22 PM UTC: 
+ exercises.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:7: error: array size missing in ‘arrAux’
+   54 |   int arrAux[];
+      |       ^~~~~~
+exercises.c:54:7: error: unused variable ‘arrAux’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+da4a20a
