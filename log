@@ -371,3 +371,9 @@ exercises.c:171:33: error: ‘nombre’ undeclared (first use in this function)
 exercises.c:171:33: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 7a50fbb
+Thu 17 Aug 2023 11:34:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+e2281f7
