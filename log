@@ -15,3 +15,8 @@ Thu 17 Aug 2023 08:19:39 PM UTC:
  tests:  0|6
 total_score: 10/70
 bed61b2
+Thu 17 Aug 2023 08:26:04 PM UTC: 
+ exercises.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+ tests:  0|0
+2305152
