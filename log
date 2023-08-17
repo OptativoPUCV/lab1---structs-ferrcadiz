@@ -250,3 +250,27 @@ exercises.c:119:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 b8044cc
+Thu 17 Aug 2023 11:11:13 PM UTC: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:109:7: error: variable ‘ordenDescendente’ set but not used [-Werror=unused-but-set-variable]
+  109 |   int ordenDescendente = 1;
+      |       ^~~~~~~~~~~~~~~~
+exercises.c:120:1: error: control reaches end of non-void function [-Werror=return-type]
+  120 | }
+      | ^
+test.c: In function ‘mergeSortedArrays’:
+exercises.c:91:24: error: ‘j’ is used uninitialized [-Werror=uninitialized]
+   91 |   while(i < size1 && j < size2){
+      |                      ~~^~~~~~~
+exercises.c:94:13: error: ‘k’ is used uninitialized [-Werror=uninitialized]
+   94 |       result[k] = arr1[i];
+      |             ^
+exercises.c:95:8: error: ‘i’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   95 |       i++;
+      |       ~^~
+cc1: all warnings being treated as errors
+Compilation failed
+b24793a

@@ -83,11 +83,12 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {
-  int k;
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
   
-  while(int i = 0 < size1 && int j = 0 < size2){
+  int k;
+  int i;
+  int j;
+  while(i < size1 && j < size2){
 
     if(arr1[i] < arr2[j]){
       result[k] = arr1[i];
