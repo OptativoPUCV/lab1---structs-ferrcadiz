@@ -387,3 +387,13 @@ exercises.c:173:9: error: ‘Libro’ has no member named ‘anio’
       |         ^~
 Compilation failed
 b64644b
+Thu 17 Aug 2023 11:36:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:173:9: error: expected identifier or ‘(’ before ‘->’ token
+  173 |   Libro -> anio.publicacion = anioPublicacion;
+      |         ^~
+Compilation failed
+7935dad
