@@ -56,9 +56,9 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     if (arr[i] % 2 == 0) cont++;
   }
   
-  int *arrAux = (int *)malloc(cont * sizeof(int));
+  int *arrPares = (int *)malloc(cont * sizeof(int));
   for(int i = 0; i < size ; i++){
-    if (arrAux == NULL) {
+    if (arrPares == NULL) {
       *newSize = 0;
       return NULL; 
     }  
@@ -67,7 +67,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int aux = 0;
   for (int i = 0; i < size; i++) {
     if (arr[i] % 2 == 0) {
-      arrAux[aux] = arr[i];
+      arrPares[aux] = arr[i];
       aux++;
     }
   }
@@ -75,7 +75,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   
   *newSize = cont;
   
-  return arrAux; 
+  return arrPares; 
 }
 
 /*
@@ -93,7 +93,13 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size) { 
+  
+
+  
+  return -2; 
+
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
