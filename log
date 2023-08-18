@@ -505,3 +505,9 @@ exercises.c:192:9: error: variable ‘ultimoNodo’ set but not used [-Werror=un
 cc1: all warnings being treated as errors
 Compilation failed
 3744f27
+Fri 18 Aug 2023 02:42:05 AM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+ tests:  0|0
+total_score: 70/70
+a00e189
